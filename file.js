@@ -47,6 +47,7 @@ Book.prototype.toggleRead = function() {
   sliderCheckedOrNot();
 }
 
+// Toggle button event listnere
 function toggleEventListner() {
   let idInput = document.querySelectorAll("input");
   idInput.forEach(function(checkbox) {
@@ -117,7 +118,7 @@ function addBookToLibrary(book) {
     const delBtn = document.createElement('button');
     delBtn.classList.add("delete");
     delBtn.setAttribute("onclick", "deleteBook(this.parentNode.parentNode.id)")
-    delBtn.textContent = "Delete Book"
+    
     buttons.appendChild(delBtn);
     
     card.appendChild(buttons);
@@ -161,10 +162,10 @@ function opa() {
   let transparent = document.querySelectorAll(".book")
   for (let i = 0; i < myLibrary.length; i++) {
     if (myLibrary[i].read == false) {
-      transparent[i].setAttribute("style", "opacity: 0.8")
+      transparent[i].setAttribute("style", "background-color: rgba(165, 42, 42, 0.8)")
     }
     else {
-      transparent[i].setAttribute("style", "opacity: 1")
+      transparent[i].setAttribute("style", "background-color: rgb(165, 42, 42)")
     }
   }
 }
@@ -207,7 +208,6 @@ function myLibraryBack() {
     const delBtn = document.createElement('button');
     delBtn.classList.add("delete");
     delBtn.setAttribute("onclick", "deleteBook(this.parentNode.parentNode.id)")
-    delBtn.textContent = "Delete Book"
     buttons.appendChild(delBtn);
     
     card.appendChild(buttons);
