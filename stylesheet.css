@@ -98,6 +98,14 @@
     margin-bottom: 50px;
 }
 
+.dialogTitle {
+    font-size: 1.5rem;
+}
+
+.dialogMessage {
+    font-size: 1rem;
+}
+
 #title {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
@@ -153,6 +161,29 @@ legend,
 .readButtons,
 .buttons {
     margin-left: 10px;
+}
+
+.buttons {
+    align-self: self-end;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+#addBook,
+#closeDialog {
+    font-size: 0.9rem;
+    width: 100px;
+    height: 30px;
+    border-radius: 20px;
+    border: none;
+}
+
+#addBook:hover,
+#closeDialog:hover {
+    /* border: solid 1px #2196F3; */
+    background-color: #2196F3;
+    color: white;
+    transform: scale(1.1);
 }
 
 /* Books area */

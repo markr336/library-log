@@ -260,7 +260,7 @@ showBtn.addEventListener("click", () => {
     The default of dialog is closing the box after submitting so e.preventDefault()
     prevents the dialog from closing. */
 addBook.addEventListener("click", (e) => {
-  e.preventDefault();
+  // e.preventDefault();
   
   // Prevents user from submitting book without option not being checked
   let optionChecked = document.querySelector('[name="readOrNot"]:checked')
